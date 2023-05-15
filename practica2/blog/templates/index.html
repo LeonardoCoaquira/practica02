@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+        <!-- Blog post-->
+        {% for post in posts %}
+            <div class="card mb-4">
+                <div class="card-body">              
+                    <h2 class="card-title h4">{{post.titulo}}</h2>
+                    <p class="card-text">{{post.descripcion}}.</p>
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}
